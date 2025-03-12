@@ -1,8 +1,8 @@
-export function mensaje(status, mensajeUsuario, mensajeOrijinal ='',token = '') {
+export function mensaje(status, mensajeUsuario, mensajeOriginal ='',token = '') {
     return {
         status,
         mensajeUsuario,
-        mensajeOrijinal,
+        mensajeOriginal,
         token
     }
 }

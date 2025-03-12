@@ -10,10 +10,11 @@ export function creartoken(dato) {
             process.env.SECRET_KEY, 
             {expiresIn: '1d'},
             (error, token) => {
-            if (error) {
-                reject(mensaje(400,"error al generar token",error));
+                if (error) {
+                    reject(mensaje(400,"error al generar token",error));
             }
             resolve(token);
         });
     });
 }
+
